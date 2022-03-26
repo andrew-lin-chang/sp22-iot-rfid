@@ -1,5 +1,25 @@
+import React from 'react';
+import {
+  View,
+  Text, 
+  StyleSheet,
+} from 'react-native';
+
+
 import logo from './logo.svg';
 import './App.css';
+
+const NewApp = () => {
+  return (
+  <View>
+    <Text>KeyDrop</Text>
+    <View>
+      <Text style={style.tap}>Log In</Text>
+    </View>
+  </View>
+
+  )
+}
 
 function App() {
   return (
@@ -7,10 +27,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Jessica is so good at coding
         </p>
         <a
-          className="App-link"
+          className="App-link" 
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
