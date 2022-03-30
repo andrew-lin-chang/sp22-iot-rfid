@@ -32,7 +32,11 @@ const linking: LinkingOptions<RootStackParamList> = {
           },
         },
       },
-      Modal: 'modal',
+      NewCard: {
+        screens: {
+          NewCardScreen: 'newcard',
+        },
+      },
       NotFound: '*',
     },
   },
