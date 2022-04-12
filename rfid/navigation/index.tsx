@@ -14,6 +14,7 @@ import { ColorSchemeName, Pressable } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+import CardInfoScreen from '../screens/CardInfoScreen';
 import NewCardScreen from '../screens/NewCardScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import DigitalWalletScreen from '../screens/DigitalWalletScreen';
@@ -45,6 +46,7 @@ function RootNavigator() {
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="NewCard" component={NewCardScreen} options={{ title: 'New Card' }} />
+        <Stack.Screen name="CardInfo" component={CardInfoScreen} options={{ title: 'Card Info' }} />
       </Stack.Group>
     </Stack.Navigator>
   );

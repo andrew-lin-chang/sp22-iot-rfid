@@ -37,6 +37,11 @@ const linking: LinkingOptions<RootStackParamList> = {
           NewCardScreen: 'newcard',
         },
       },
+      CardInfo: {
+        screens: {
+          CardInfoScreen: 'cardinfo',
+        },
+      },
       NotFound: '*',
     },
   },
