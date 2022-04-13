@@ -21,20 +21,20 @@ export default function NewCardScreen({ navigation }: RootTabScreenProps<'Digita
         <Text style={styles.label}>Description</Text>
         <TextInput 
           style={styles.input}
-          onChangeText={onChangeNumber}
+          onChangeText={onChangeText}
           value={text}
           placeholder='Key Description'
         />
         <Text style={styles.label}>UID</Text>
         <TextInput 
           style={styles.input}
-          onChangeText={onChangeNumber}
+          onChangeText={onChangeText}
           value={text}
           placeholder='UID'
         />
         <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('Root')} style={styles.submitButton}>
-          <Text style={styles.buttonText}>Submit</Text>
+          <Text style={styles.buttonText}>Add Key</Text>
         </TouchableOpacity>
       </SafeAreaView>
 
