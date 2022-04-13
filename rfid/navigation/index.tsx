@@ -45,8 +45,8 @@ function RootNavigator() {
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
-        <Stack.Screen name="NewCard" component={NewCardScreen} options={{ title: 'New Card' }} />
-        <Stack.Screen name="CardInfo" component={CardInfoScreen} options={{ title: 'Card Info' }} />
+        <Stack.Screen name="NewCard" component={NewCardScreen} options={{ title: 'Add a New Key' }} />
+        <Stack.Screen name="CardInfo" component={CardInfoScreen} options={{ title: 'Key Info' }} />
       </Stack.Group>
     </Stack.Navigator>
   );

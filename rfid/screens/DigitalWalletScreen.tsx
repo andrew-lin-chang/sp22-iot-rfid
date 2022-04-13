@@ -1,24 +1,42 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, AppRegistry,  } from 'react-native';
+import { StyleSheet, TouchableOpacity, AppRegistry, ScrollView } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
 export default function DigitalWalletScreen({ navigation }: RootTabScreenProps<'DigitalWallet'>) {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button}>
-        <Text style={styles.buttonText}>Card One</Text>
-      </TouchableOpacity>
+    <ScrollView>
+      <View style={styles.container}>
       <View style={styles.separator} lightColor="#fff" />
-      <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button}>
-        <Text style={styles.buttonText}>Card Two</Text>
-      </TouchableOpacity>
-      <View style={styles.separator} lightColor="#fff" />
-      <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button}>
-        <Text style={styles.buttonText}>Card Three</Text>
-      </TouchableOpacity>
-    </View>
+        <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button1}>
+          <Text style={styles.buttonText}>Rooftop</Text>
+        </TouchableOpacity>
+        <View style={styles.separator} lightColor="#fff" />
+        <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button2}>
+          <Text style={styles.buttonText}>Gym</Text>
+        </TouchableOpacity>
+        <View style={styles.separator} lightColor="#fff" />
+        <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button3}>
+          <Text style={styles.buttonText}>Pool</Text>
+        </TouchableOpacity>
+        <View style={styles.separator} lightColor="#fff" />
+        <View style={styles.container}>
+        <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button1}>
+          <Text style={styles.buttonText}>Anushka's Apartment</Text>
+        </TouchableOpacity>
+        <View style={styles.separator} lightColor="#fff" />
+        <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button2}>
+          <Text style={styles.buttonText}>Jessica's Absolutely Gigantic Mansion</Text>
+        </TouchableOpacity>
+        <View style={styles.separator} lightColor="#fff" />
+        <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button3}>
+          <Text style={styles.buttonText}>Dhrohit's Crib</Text>
+        </TouchableOpacity>
+        <View style={styles.separator} lightColor="#fff" />
+      </View>
+      </View>
+    </ScrollView>
   );
 }
 
@@ -37,8 +55,22 @@ const styles = StyleSheet.create({
     height: 1,
     width: '80%',
   },
-  button: {
+  button1: {
     backgroundColor: "#98DFFC",
+    width: 300,
+    height: 175,
+    padding: 20,
+    borderRadius: 10
+  },
+  button2: {
+    backgroundColor: "#43C2F3",
+    width: 300,
+    height: 175,
+    padding: 20,
+    borderRadius: 10
+  },
+  button3: {
+    backgroundColor: "#292DA3",
     width: 300,
     height: 175,
     padding: 20,
