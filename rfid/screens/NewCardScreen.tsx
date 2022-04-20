@@ -7,6 +7,8 @@ import navigation from '../navigation';
 
 export default function NewCardScreen({ navigation }: RootTabScreenProps<'DigitalWallet'>) {
   const [text, onChangeText] = React.useState("");
+  const [text2, onChangeText2] = React.useState("");
+  const [text3, onChangeText3] = React.useState("");
   const [number, onChangeNumber] = React.useState(null);
   return (
     <View style={styles.container}>
@@ -21,20 +23,20 @@ export default function NewCardScreen({ navigation }: RootTabScreenProps<'Digita
         <Text style={styles.label}>Description</Text>
         <TextInput 
           style={styles.input}
-          onChangeText={onChangeNumber}
-          value={text}
+          onChangeText={onChangeText2}
+          value={text2}
           placeholder='Key Description'
         />
         <Text style={styles.label}>UID</Text>
         <TextInput 
           style={styles.input}
-          onChangeText={onChangeNumber}
-          value={text}
+          onChangeText={onChangeText3}
+          value={text3}
           placeholder='UID'
         />
         <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('Root')} style={styles.submitButton}>
-          <Text style={styles.buttonText}>Submit</Text>
+          <Text style={styles.buttonText}>Add Key</Text>
         </TouchableOpacity>
       </SafeAreaView>
 
