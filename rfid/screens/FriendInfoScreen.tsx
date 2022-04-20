@@ -8,6 +8,7 @@ export default function FriendInfoScreen() {
     <View style={styles.container}>
         <TouchableOpacity style={styles.button1}>
             <Text style={styles.buttonText}>Jessica</Text>
+            <Image />
         </TouchableOpacity>
         {/* Use a light status bar on iOS to account for the black space above the modal */}
         <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
