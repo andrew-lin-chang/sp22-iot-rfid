@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
@@ -11,14 +11,20 @@ export default function FriendsScreen({ navigation }: RootTabScreenProps<'Friend
         <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('FriendInfo')} style={styles.button1}>
             <Text style={styles.buttonText}>Jessica</Text>
+            <View style={styles.separator2} lightColor="#98DFFC" />
+            <Image style={styles.image} source={require('../assets/images/jessica2.png')}/> 
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('FriendInfo')} style={styles.button2}>
             <Text style={styles.buttonText}>Anushka</Text>
+            <View style={styles.separator2} lightColor="#43C2F3" />
+            <Image style={styles.image} source={require('../assets/images/anushk.png')}/> 
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('FriendInfo')} style={styles.button3}>
             <Text style={styles.buttonText}>Dhrohit</Text>
+            <View style={styles.separator2} lightColor="#292DA3" />
+            <Image style={styles.image} source={require('../assets/images/dhruv.png')}/> 
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <View style={styles.container}>
@@ -72,5 +78,13 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: "white"
-  }
+  },
+  image: {
+    width: 135,
+    height: 135,
+  },
+  separator2: {
+    marginVertical: 2,
+    height: 1,
+    width: '80%',  },
 });

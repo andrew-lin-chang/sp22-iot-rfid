@@ -8,7 +8,8 @@ export default function FriendInfoScreen() {
     <View style={styles.container}>
         <TouchableOpacity style={styles.button1}>
             <Text style={styles.buttonText}>Jessica</Text>
-            {/* <Image /> */}
+            <View style={styles.separator} lightColor="#98DFFC" />
+            <Image style={styles.image} source={require('../assets/images/jessica2.png')}/> 
         </TouchableOpacity>
         {/* Use a light status bar on iOS to account for the black space above the modal */}
         <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
@@ -29,10 +30,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   separator: {
-    marginVertical: 30,
+    marginVertical: 2,
     height: 1,
-    width: '80%',
-  },
+    width: '80%',  },
   button1: {
     backgroundColor: "#98DFFC",
     width: 175,
@@ -44,5 +44,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: "white"
+  },
+  image: {
+    width: 135,
+    height: 135,
   }
 });
