@@ -14,6 +14,8 @@ import { ColorSchemeName, Pressable } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+import AuthorizeUserScreen from '../screens/AuthorizeUserScreen';
+import ScanScreen from '../screens/ScanScreen';
 import CardInfoScreen from '../screens/CardInfoScreen';
 import FriendInfoScreen from '../screens/FriendInfoScreen';
 import NewCardScreen from '../screens/NewCardScreen';
@@ -49,6 +51,8 @@ function RootNavigator() {
         <Stack.Screen name="NewCard" component={NewCardScreen} options={{ title: 'Add a New Key' }} />
         <Stack.Screen name="CardInfo" component={CardInfoScreen} options={{ title: 'Key Info' }} />
         <Stack.Screen name="FriendInfo" component={FriendInfoScreen} options={{ title: 'Friend Info' }} />
+        <Stack.Screen name="AuthorizeUser" component={AuthorizeUserScreen} options={{ title: 'Authorize User'}} />
+        <Stack.Screen name="Scan" component={ScanScreen} options={{ title: 'Scan Key'}} />
       </Stack.Group>
     </Stack.Navigator>
   );

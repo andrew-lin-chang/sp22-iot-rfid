@@ -10,9 +10,7 @@ export default function DigitalWalletScreen({ navigation }: RootTabScreenProps<'
       <View style={styles.container}>
       <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button1}>
-          <ImageBackground source={require('../assets/images/Blue12.png')} resizeMode="cover" style={styles.image}>
           <Text style={styles.buttonText}>Rooftop</Text>
-          </ImageBackground>
         </TouchableOpacity>
         <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button2}>
@@ -58,7 +56,7 @@ const styles = StyleSheet.create({
     width: '80%',
   },
   button1: {
-    // backgroundColor: "#98DFFC",
+    backgroundColor: "#98DFFC",
     // backgroundImage: 
     width: 300,
     height: 175,

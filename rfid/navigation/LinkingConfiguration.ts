@@ -42,6 +42,21 @@ const linking: LinkingOptions<RootStackParamList> = {
           CardInfoScreen: 'cardinfo',
         },
       },
+      FriendInfo: {
+        screens: {
+          FriendInfoScreen: 'friendinfo',
+        },
+      },
+      AuthorizeUser: {
+        screens: {
+          AuthorizeUserScreen: 'authorizeuser',
+        },
+      },
+      Scan: {
+        screens: {
+          ScanScreen: 'scan',
+        },
+      },
       NotFound: '*',
     },
   },

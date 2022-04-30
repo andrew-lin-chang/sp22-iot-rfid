@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { Platform, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 
 import { Text, View } from '../components/Themed';
+import { RootTabScreenProps } from '../types';
 
-export default function FriendInfoScreen() {
+export default function FriendInfoScreen({ navigation }: RootTabScreenProps<'Friends'>)  {
   return (
     <View style={styles.container}>
         <TouchableOpacity style={styles.button1}>
@@ -11,6 +12,32 @@ export default function FriendInfoScreen() {
             <View style={styles.separator} lightColor="#98DFFC" />
             <Image style={styles.image} source={require('../assets/images/jessica2.png')}/> 
         </TouchableOpacity>
+        <Text style={styles.title}> Pick a key to share: </Text>
+        <ScrollView>
+          <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton1}>
+            <Text style={styles.buttonText}>Rooftop</Text>
+          </TouchableOpacity>
+          <View style={styles.separator} lightColor="#fff" />
+          <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton2}>
+            <Text style={styles.buttonText}>Gym</Text>
+          </TouchableOpacity>
+            <View style={styles.separator} lightColor="#fff" />
+            <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton3}>
+              <Text style={styles.buttonText}>Pool</Text>
+            </TouchableOpacity>
+            <View style={styles.separator} lightColor="#fff" />
+            <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton1}>
+              <Text style={styles.buttonText}>Anushka's Apartment</Text>
+            </TouchableOpacity>
+            <View style={styles.separator} lightColor="#fff" />
+            <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton2}>
+              <Text style={styles.buttonText}>Jessica's Absolutely Gigantic Mansion</Text>
+            </TouchableOpacity>
+            <View style={styles.separator} lightColor="#fff" />
+            <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton3}>
+              <Text style={styles.buttonText}>Dhrohit's Crib</Text>
+           </TouchableOpacity>
+          </ScrollView>
         {/* Use a light status bar on iOS to account for the black space above the modal */}
         <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
     </View>
@@ -20,13 +47,14 @@ export default function FriendInfoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingLeft: 20,
     paddingTop: 20
   },
   title: {
-    fontSize: 20,
+    paddingTop: 20,
+    paddingBottom: 10,
+    fontSize: 25,
     fontWeight: 'bold',
   },
   separator: {
@@ -48,5 +76,26 @@ const styles = StyleSheet.create({
   image: {
     width: 135,
     height: 135,
-  }
+  },
+  keybutton1: {
+    backgroundColor: "#98DFFC",
+    width: 250,
+    height: 75,
+    padding: 20,
+    borderRadius: 10
+  },
+  keybutton2: {
+    backgroundColor: "#43C2F3",
+    width: 250,
+    height: 75,
+    padding: 20,
+    borderRadius: 10
+  },
+  keybutton3: {
+    backgroundColor: "#292DA3",
+    width: 250,
+    height: 75,
+    padding: 20,
+    borderRadius: 10
+  },
 });

@@ -18,6 +18,8 @@ export type RootStackParamList = {
   NewCard: undefined;
   CardInfo: undefined;
   FriendInfo: undefined;
+  AuthorizeUser: undefined;
+  Scan: undefined;
   NotFound: undefined;
 };
 
