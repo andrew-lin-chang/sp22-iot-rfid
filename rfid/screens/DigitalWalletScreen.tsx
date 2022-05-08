@@ -10,7 +10,7 @@ export default function DigitalWalletScreen({ navigation }: RootTabScreenProps<'
       <View style={styles.container}>
       <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button1}>
-          <Text style={styles.buttonText}>Rooftop</Text>
+          <Text style={styles.buttonText}>House Key</Text>
         </TouchableOpacity>
         <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button2}>
@@ -31,7 +31,7 @@ export default function DigitalWalletScreen({ navigation }: RootTabScreenProps<'
         </TouchableOpacity>
         <View style={styles.separator} lightColor="#fff" />
         <TouchableOpacity onPress={() => navigation.navigate('CardInfo')} style={styles.button3}>
-          <Text style={styles.buttonText}>Dhrohit's Crib</Text>
+          <Text style={styles.buttonText}>Pranav's House</Text>
         </TouchableOpacity>
         <View style={styles.separator} lightColor="#fff" />
       </View>
@@ -81,7 +81,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: "white"
-  }, image: {
+  }, 
+  image: {
     flex: 1,
     justifyContent: "center",
   }

@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   authbuttony: {
       paddingHorizontal: 8,
-      paddingVertical: 6,
+      paddingVertical: 10,
       borderRadius: 4,
       backgroundColor: "#228C22",
       alignSelf: "flex-start",
@@ -73,12 +73,12 @@ const styles = StyleSheet.create({
       marginBottom: 6,
       minWidth: "40%",
       minHeight: "25%",
-      height: 50,
+      height: 30,
       textAlign: "center",
   },
   authbuttonn: {
     paddingHorizontal: 8,
-    paddingVertical: 6,
+    paddingVertical: 10,
     borderRadius: 4,
     backgroundColor: "#FF0000",
     alignSelf: "flex-start",
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     marginBottom: 6,
     minWidth: "40%",
     minHeight: "20%",
-    height: 50,
+    height: 58,
     textAlign: "center",
 }
 });

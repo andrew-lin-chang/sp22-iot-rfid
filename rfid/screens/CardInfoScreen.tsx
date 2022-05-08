@@ -8,7 +8,7 @@ export default function CardInfoScreen({ navigation }: RootTabScreenProps<'Frien
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button1}>
-          <Text style={styles.buttonText2}>Rooftop</Text>
+          <Text style={styles.buttonText2}>Pranav's House</Text>
       </TouchableOpacity>
       <Text style={styles.title}>Recent Uses</Text>
       <ScrollView>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   button1: {
-    backgroundColor: "#98DFFC",
+    backgroundColor: "#292DA3",
     width: 300,
     height: 175,
     padding: 20,

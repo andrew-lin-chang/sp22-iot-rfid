@@ -10,9 +10,9 @@ export default function FriendsScreen({ navigation }: RootTabScreenProps<'Friend
         <ScrollView horizontal>
         <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('FriendInfo')} style={styles.button1}>
-            <Text style={styles.buttonText}>Jessica</Text>
+            <Text style={styles.buttonText}>Andrew</Text>
             <View style={styles.separator2} lightColor="#98DFFC" />
-            <Image style={styles.image} source={require('../assets/images/jessica2.png')}/> 
+            <Image style={styles.image} source={require('../assets/images/andrew.png')}/> 
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('FriendInfo')} style={styles.button2}>
@@ -22,9 +22,9 @@ export default function FriendsScreen({ navigation }: RootTabScreenProps<'Friend
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('FriendInfo')} style={styles.button3}>
-            <Text style={styles.buttonText}>Dhrohit</Text>
+            <Text style={styles.buttonText}>Jessica</Text>
             <View style={styles.separator2} lightColor="#292DA3" />
-            <Image style={styles.image} source={require('../assets/images/dhruv.png')}/> 
+            <Image style={styles.image} source={require('../assets/images/jessica2.png')}/> 
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <View style={styles.container}>

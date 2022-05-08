@@ -8,14 +8,14 @@ export default function FriendInfoScreen({ navigation }: RootTabScreenProps<'Fri
   return (
     <View style={styles.container}>
         <TouchableOpacity style={styles.button1}>
-            <Text style={styles.buttonText}>Jessica</Text>
+            <Text style={styles.buttonText}>Andrew</Text>
             <View style={styles.separator} lightColor="#98DFFC" />
-            <Image style={styles.image} source={require('../assets/images/jessica2.png')}/> 
+            <Image style={styles.image} source={require('../assets/images/andrew.png')}/> 
         </TouchableOpacity>
         <Text style={styles.title}> Pick a key to share: </Text>
         <ScrollView>
           <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton1}>
-            <Text style={styles.buttonText}>Rooftop</Text>
+            <Text style={styles.buttonText}>House Key</Text>
           </TouchableOpacity>
           <View style={styles.separator} lightColor="#fff" />
           <TouchableOpacity onPress={() => navigation.navigate('AuthorizeUser')} style={styles.keybutton2}>
